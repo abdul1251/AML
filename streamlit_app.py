@@ -38,7 +38,7 @@ if st.button('Predict'):
 
     result = loaded_model.predict(df2)
     df1['isFlaggedFraud'] = df2['isFlaggedFraud']
-    df2['isFraud'] = result
+    df1['isFraud'] = result
 
     st.dataframe(df1)
 
